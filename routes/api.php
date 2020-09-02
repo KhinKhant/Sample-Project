@@ -36,7 +36,10 @@ Route::get('/employee-export', 'employeeController@fileExport')->name('fileExpor
 //Department_Position
 Route::apiResource('department_positions', 'depPositionController');
 
-
+//validation
+Route::get('save', 'EmployeeRegistrationController@save');
+Route::get('position/save', 'PositionRegistrationController@save');
+Route::post('employee/update', 'EmployeeRegistrationController@update');
 
 
 
